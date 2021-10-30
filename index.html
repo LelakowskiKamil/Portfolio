@@ -15,80 +15,89 @@
 
 <body>
   <div class="site">
-    <a class="navbar-brand" href="#">Portfolio</a>
-    <div class="d-none d-md-inline-flex flex-row">
-      <a class="nav-item nav-link" href="#">Home</a>
-      <a class="nav-item nav-link" href="#">About</a>
-      <a class="nav-item nav-link" href="#">Technologies</a>
-      <a class="nav-item nav-link" href="#">Projects</a>
-      <a class="nav-item nav-link" href="#">Contact</a>
+      <a class="navbar-brand navStyle2" href="#">Portfolio</a>
+      <div class="d-none d-md-inline-flex flex-row">
+        <a class="nav-item nav-link navStyle" href="#about">About</a>
+        <a class="nav-item nav-link navStyle" href="#technologies">Technologies</a>
+        <a class="nav-item nav-link navStyle" href="#projects">Projects</a>
+        <a class="nav-item nav-link navStyle" href="#contact">Contact</a>
+      </div>
+    <div class="d-block d-md-none">
+      <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+      <label for="menu-icon"></label>
+      <nav class="nav">
+        <ul class="pt-5">
+          <li><a onclick="closeMenu()" href="#about">About</a></li>
+          <li><a onclick="closeMenu()" href="#technologies">Technologies</a></li>
+          <li><a onclick="closeMenu()" href="#projects">Projects</a></li>
+          <li><a onclick="closeMenu()" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
-    <label for="menu-icon"></label>
-    <nav class="nav">
-      <ul class="pt-5">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Technologies</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+
 
     <div class="hero">
       <h1>Kamil Lelakowski</h1>
+      <h6 class="d-none d-md-block">Backend Developer</h1>
     </div>
   </div>
 
-  <section class="section">
+  <section class="section" id="about">
     <div class="row leftStartRow">
       <h2>About</h2>
     </div>
     <div class="row centerStartRow">
-      <div class="col-md-6 paddingt100">
-        <p class="justifytext"> My name is Kamil Lelakowski. I am in part-time masters studies in Computer Science at
+      <div class="col-lg-7 paddingt100">
+        <div class="d-flex flex-row align-content-center justify-content-center d-lg-none">
+          <img class="img me w-50" src="ja22.jpg">
+        </div>
+        <p class="aboutmetext px-3">My name is Kamil Lelakowski. I am in part-time masters studies in Computer Science
+          at
           the
           Warsaw
           University of Technology. Earlier, my engineering thesis, as well as the currently selected
           specialization at the 2nd degree studies, directed me to the path of a IT
-          systems architect. I have one year of commercial experience working at JVM - mainly in
-          Scala. I also have extensive experience in Java and the Spring framework. In my spare time I practice
+          systems architect. </p>
+        <p class="aboutmetext px-3"> I have over one year of commercial experience working at Scala. I also familiar
+          with Java and the Spring framework. In my spare time I practice
           street-workout and acrobatics.</p>
 
-        <div class="items2 mb-2">
-          <img class="mx-2" src="mail.png" alt="mail"> <a class="fs-5"
+        <div class="items2 mb-2 px-3">
+          <img class="mx-2" src="mail.png" alt="mail"> <a class="linkstyle"
             href="mailto: kamilel1997@gmail.com">kamilel1997@gmail.com</a>
         </div>
-        <div class="items2 mb-2">
-          <img class="mx-2" src="pineska.png" alt="pin"> <a class="fs-5">Warsaw, Poland</a>
+        <div class="items2 mb-2 px-3">
+          <img class="mx-2" src="git.png" alt="git"> <a class="linkstyle"
+            href="http://github.com/LelakowskiKamil/">Github</a>
         </div>
-        <div class="items2">
-          <img class="mx-2" src="git.png" alt="git"> <a class="fs-5">Github</a>
+        <div class="items2 px-3">
+          <img class="mx-2" src="pineska.png" alt="pin"> Warsaw, Poland
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="d-none d-md-flex">
-          <img class="img" src="ja.jpg">
+      <div class="col-lg-5">
+        <div class="d-none d-lg-flex">
+          <img class="img" src="ja22.jpg">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="technologies">
     <div class="rew leftStartRow">
       <h2>Technologies</h2>
     </div>
-    <div class="centerStartRow">
-      <div >
+    <div class="d-none d-md-flex centerStartRow">
+      <div>
         <div class="container">
           <div class="card">
             <div class="face face1">
               <div class="content">
                 <div class="icon cardiconheight">
-                  <img class="cardiconheight" src="./java.png" >
+                  <img class="cardiconheight" src="./java.png">
                 </div>
               </div>
             </div>
-            <div class="face face2">  
+            <div class="face face2">
               <div class="content">
                 <h3>Java</h3>
                 <ul class="ultext">
@@ -106,7 +115,7 @@
             <div class="face face1">
               <div class="content">
                 <div class="icon cardiconheight">
-                  <img class="cardiconheight" src="./scala.png" >
+                  <img class="cardiconheight" src="./scala.png">
                 </div>
               </div>
             </div>
@@ -127,7 +136,7 @@
             <div class="face face1">
               <div class="content">
                 <div class="icon cardiconheight">
-                  <img class="cardiconheight" src="./spring.png" >
+                  <img class="cardiconheight" src="./spring.png">
                 </div>
               </div>
             </div>
@@ -152,7 +161,7 @@
             <div class="face face1">
               <div class="content">
                 <div class="icon cardiconwidth">
-                  <img class="cardiconwidth" src="./hibernate.png" >
+                  <img class="cardiconwidth" src="./hibernate.png">
                 </div>
               </div>
             </div>
@@ -173,7 +182,7 @@
             <div class="face face1">
               <div class="content">
                 <div class="icon cardiconwidth">
-                  <img class="cardiconwidth" src="./sql.png" >
+                  <img class="cardiconwidth" src="./sql.png">
                 </div>
               </div>
             </div>
@@ -196,7 +205,7 @@
             <div class="face face1">
               <div class="content">
                 <div class="icon cardiconheight">
-                  <img class="cardiconheight" src="./docker.png" >
+                  <img class="cardiconheight" src="./docker.png">
                 </div>
               </div>
             </div>
@@ -217,7 +226,7 @@
             <div class="face face1">
               <div class="content">
                 <div class="icon cardiconheight">
-                  <img class="cardiconheight" src="./microservices.png" >
+                  <img class="cardiconheight" src="./microservices.png">
                 </div>
               </div>
             </div>
@@ -239,7 +248,7 @@
             <div class="face face1">
               <div class="content">
                 <div class="icon cardiconheight">
-                  <img class="cardiconheight" src="./linux.png" >
+                  <img class="cardiconheight" src="./linux.png">
                 </div>
               </div>
             </div>
@@ -261,7 +270,7 @@
             <div class="face face1">
               <div class="content">
                 <div class="icon cardiconheight">
-                  <img class="cardiconheight" src="./html.png" >
+                  <img class="cardiconheight" src="./html.png">
                 </div>
               </div>
             </div>
@@ -282,7 +291,7 @@
             <div class="face face1">
               <div class="content">
                 <div class="icon cardiconheight">
-                  <img class="cardiconheight" src="./css.png" >
+                  <img class="cardiconheight" src="./css.png">
                 </div>
               </div>
             </div>
@@ -291,8 +300,8 @@
                 <h3>CSS</h3>
                 <ul class="ultext">
                   <li>Basic knowledge</li>
-                </ul>           
-                 </div>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -303,7 +312,7 @@
             <div class="face face1">
               <div class="content">
                 <div class="icon cardiconheight">
-                  <img class="cardiconheight" src="./javascript.png" >
+                  <img class="cardiconheight" src="./javascript.png">
                 </div>
               </div>
             </div>
@@ -324,7 +333,7 @@
             <div class="face face1">
               <div class="content">
                 <div class="icon cardiconheight">
-                  <img class="cardiconheight" src="./gear.png" >
+                  <img class="cardiconheight" src="./gear.png">
                 </div>
               </div>
             </div>
@@ -344,73 +353,197 @@
         </div>
       </div>
     </div>
+    <div class="d-flex flex-column d-md-none">
+      <div class="smallTech d-inline-flex flex-row align-content-end">
+        <img src="java.png" alt="java">
+        <div class="smallTechContent">
+          <h3>Java</h3>
+          <ul class="smallTechUl">
+            <li>Experience in Java 11 (own projects, learning): about 2 years</li>
+            <li>Also experience in some Java 17 utilities (pattern matching, sealed class)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="smallTech d-inline-flex flex-row align-content-end">
+        <img src="scala.png" alt="scala">
+        <div class="smallTechContent">
+          <h3>Scala</h3>
+          <ul class="smallTechUl">
+            <li>Commercial experience in Scala: 1.5 years</li>
+          </ul>
+        </div>
+      </div>
+      <div class="smallTech d-inline-flex flex-row align-content-end">
+        <img src="spring.png" alt="spring">
+        <div class="smallTechContent">
+          <h3>Spring</h3>
+          <ul class="smallTechUl">
+            <li>Spring Framework</li>
+            <li>Spring Boot 2</li>
+            <li>Spring Data JPA</li>
+            <li>Spring Web</li>
+            <li>Spring Cloud (Config, Netflix, Gateway)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="smallTech d-inline-flex flex-row align-content-end">
+        <img src="hibernate2.png" alt="hibernate">
+        <div class="smallTechContent">
+          <h3>Hibernate</h3>
+          <ul class="smallTechUl">
+            <li>Basic knowledge</li>
+          </ul>
+        </div>
+      </div>
+      <div class="smallTech d-inline-flex flex-row align-content-end">
+        <img src="sql2.png" alt="sql">
+        <div class="smallTechContent">
+          <h3>SQL</h3>
+          <ul class="smallTechUl">
+            <li>SQL Server</li>
+            <li>Oracle DB</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+      </div>
+      <div class="smallTech d-inline-flex flex-row align-content-end">
+        <img src="docker.png" alt="docker">
+        <div class="smallTechContent">
+          <h3>Docker</h3>
+          <ul class="smallTechUl">
+            <li>Basic knowledge</li>
+          </ul>
+        </div>
+      </div>
+      <div class="smallTech d-inline-flex flex-row align-content-end">
+        <img src="microservices.png" alt="microservices">
+        <div class="smallTechContent">
+          <h3>Microservices</h3>
+          <ul class="smallTechUl">
+            <li>1.5 years of commercial experience in separation of services from the monolith</li>
+            <li>Certified course in the field of microservices</li>
+          </ul>
+        </div>
+      </div>
+      <div class="smallTech d-inline-flex flex-row align-content-end">
+        <img src="linux.png" alt="linux">
+        <div class="smallTechContent">
+          <h3>Linux</h3>
+          <ul class="smallTechUl">
+            <li>Knowledge of basic commands</li>
+          </ul>
+        </div>
+      </div>
+      <div class="smallTech d-inline-flex flex-row align-content-end">
+        <img src="html-css-js.png" alt="frontend">
+        <div class="smallTechContent">
+          <h3>Frontend</h3>
+          <h6>HTML - CSS - JS</h6>
+          <ul class="smallTechUl">
+            <li>Basic knowledge</li>
+          </ul>
+        </div>
+      </div>
+      <div class="smallTechLast d-inline-flex flex-row align-content-end">
+        <img src="gear.png" alt="gear">
+        <div class="smallTechContent">
+          <h3>Tools</h3>
+          <ul class="smallTechUl">
+            <li>Mockito</li>
+            <li>JUnit 5</li>
+            <li>Maven/Gradle</li>
+            <li>Jira</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
 
 
-  <section class="section secproj">
+  <section class="section secproj" id="projects">
     <h2>Projects</h2>
     <div class="projects">
       <div class="container">
 
         <div class="card">
           <div class="box d-flex flex-column">
-              <img class="photo1proj" src="https://i.ibb.co/6yqq4V5/proj1.png">
+            <img class="photo1proj" src="https://i.ibb.co/6yqq4V5/proj1.png">
             <div class="content">
               <h3>Car bulletin board </h3>
               <div class="techs">
-                <a class="pwithcolor">Java</a><a class="pwithcolor">Spring</a><a class="pwithcolor">Hibernate</a><a class="pwithcolor">Thymeleaf</a><a class="pwithcolor">PostgresSQL</a>
+                <a class="pwithcolor">Java</a><a class="pwithcolor">Spring</a><a class="pwithcolor">Hibernate</a><a
+                  class="pwithcolor">Thymeleaf</a><a class="pwithcolor">PostgresSQL</a>
               </div>
               <p>Simple application where you can create, edit, remove announcements with user login interface</p>
               <div class="projectButtons">
-                <a href="http://github.com/LelakowskiKamil/Car-classifieds-application">Github</a>
-                <a href="#">Demo</a>
+                <a class="buttonProject" href="http://github.com/LelakowskiKamil/Car-classifieds-application">Github</a>
+                <a class="buttonProject" href="#">Demo</a>
               </div>
-              
+
             </div>
           </div>
         </div>
-      
+
         <div class="card">
           <div class="box d-flex flex-column">
             <img class="photo1proj" src="https://i.ibb.co/fntZ39L/wms.png">
-          <div class="content">
-            <h3>WMS demo application</h3>
-            <div class="techs">
-              <a class="pwithcolor">Java</a><a class="pwithcolor">Spring</a><a class="pwithcolor">Hibernate</a><a class="pwithcolor">Docker</a><a class="pwithcolor">OracleDB</a><a class="pwithcolor">Eureka</a><a class="pwithcolor">Hystrix</a>
+            <div class="content">
+              <h3>WMS demo application</h3>
+              <div class="techs">
+                <a class="pwithcolor">Java</a><a class="pwithcolor">Spring</a><a class="pwithcolor">Hibernate</a><a
+                  class="pwithcolor">Docker</a><a class="pwithcolor">OracleDB</a><a class="pwithcolor">Eureka</a><a
+                  class="pwithcolor">Hystrix</a>
+              </div>
+              <p>Demo of Warehouse management system based on my engineering thesis</p>
+              <div class="projectButtons">
+                <a class="buttonProject" href="http://github.com/LelakowskiKamil/Car-classifieds-application">Github</a>
+                <a class="buttonProject" href="#">Demo</a>
+              </div>
             </div>
-            <p>Demo of Warehouse management system based on my engineering thesis</p>
-            <div class="projectButtons">
-              <a href="http://github.com/LelakowskiKamil/Car-classifieds-application">Github</a>
-              <a href="#">Demo</a>
-            </div>
-            
           </div>
         </div>
-        </div>
-      
+
       </div>
     </div>
-  
+
   </section>
-  <section class="section">
-    <h2>A Section</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, minus laudantium excepturi incidunt voluptate
-      impedit quisquam. Dicta sed, ea perferendis consequuntur expedita nesciunt nam quae omnis voluptatibus corporis.
-      Voluptate, cumque?</p>
-  </section>
-  <section class="section">
-    <h2>A Section</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, minus laudantium excepturi incidunt voluptate
-      impedit quisquam. Dicta sed, ea perferendis consequuntur expedita nesciunt nam quae omnis voluptatibus corporis.
-      Voluptate, cumque?</p>
+  <section class="section contact" id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+        <div class="row">
+          <div class="col-md-2 col-lg-3"></div>
+          <div class="col-md-8 col-lg-6">
+              <form class="formStyle d-flex flex-column" action="#" method="POST">
+                <div>
+                  <div class="d-flex flex-column">
+                    <label for="email">Email</label>
+                    <input name="email" id="email">
+                    <label for="topic">Topic</label>
+                    <input name="topic" id="topic">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="10"></textarea>
+                  </div>
+                </div>
+                <div>
+                  <button class="buttonContact">Send</button>
+                </div>
+              </form>
+          </div>
+          <div class="col-md-2 col-lg-3"></div>
+        </div>
+
+    </div>
+
+    </div>
   </section>
   <footer>
     <p>No Copyright 2021</p>
   </footer>
   </div>
 
-
+  <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>

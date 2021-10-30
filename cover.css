@@ -37,11 +37,6 @@
   padding-top: 100px;
 }
 
-/* .hero h1{
-  font-size: 550%;
-  margin: 0 90px;
-  text-align: center;
-} */
 .centerStartRow{
   display: flex;
   flex-direction: row;
@@ -65,75 +60,38 @@
 	background-color: #353746;
 }
 
-/* .section {
-	max-width: 1080px;
-	margin: 60px auto;
-	padding: 20px 30px 50px 30px;
-	background-color: #FFCDD2;
-}  */
-
-/* .section {
-  font-size: calc(14px + 2vw);
-} */
-
 .section h2{
-  font-size: calc(14px + 2vw);
+  font-size: calc(16px + 2vw);
     /* margin-bottom: 15px; */
     margin-left: 15px;
 }
-
-
-
-/* .section p{
-  font-size: 2vw;
-  line-height: 1.625em;
-  padding: 20px 15px 20px 0px;
-  margin: 0 auto;
-  max-width: 480px;
-  text-align: justify;
+@media(min-width: 991px){
+  .section h2{
+    font-size: calc(14px + 2vw);
+      /* margin-bottom: 15px; */
+      margin-left: 15px;
+  }
 }
-
-@media(min-width: 1280px){
-.section p{
-  font-size: 23px;
-  line-height: 1.625em;
-  padding: 20px 15px 20px 0px;
-  margin: 0 auto;
-  max-width: 480px;
-  text-align: justify;
-} */
 
 footer {
 	text-align: center;
 }
 
 .paddingt100{
-  padding-top: 70px;
+  padding-top: 2rem;
 }
 
 .items2 img{
   width: 2rem;
 height: auto;
 }
-/* .svg{
-  font-size: 1rem;
-} */
-/* 
-.parentItems2{
-  display: grid;
-  float: left;
-  width: 33%;
+
+.linkstyle{
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
 }
 
-.parentItems2 a{
-  font-size: 2vw;
-}
-
-@media(min-width: 1280px){
-  .parentItems2 a{
-    font-size: 23px;
-  }
-} */
 .three{
   padding-top: 30px;
   display: inline-flex;
@@ -150,6 +108,7 @@ height: auto;
   }
 }
 
+
 .two{
   padding-top: 5px;
   display: flex;
@@ -160,29 +119,40 @@ height: auto;
 }
 
 .img{
-  width: 100%;
+  width: 85%;
+  border-radius: 50%;
+  display: flex;
 }
 
-.justifytext{
-  margin: 15px;
- text-align: justify;
- font-size: 14px;
-
+.aboutmetext{
+  margin: 1vw;
+  text-align: justify;
+  font-size: 12px; 
 }
 
-@media(min-width: 1200px){
-  .justifytext{
-    font-size: 22px;
+@media(min-width: 576px){
+  .aboutmetext{
+    margin: 15px;
+    text-align: justify;
+    font-size: 1.75vw; 
+  }
+  .img .me{
+    width: 300px;
+  }
+}
+
+@media(min-width: 991px){
+  .aboutmetext{
+    margin: 15px;
+    text-align: justify;
+    font-size: 1.5vw; 
   }
 }
 
 
-
-
-
-
-
-/* Please ❤ this if you like it! */
+.section .row .paddingt100 .items2 a{
+  font-size: 1rem;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
@@ -217,7 +187,7 @@ align-items: center;
   text-align: center;
   transform: translateY(-50%);
 }
-h1{
+.site .hero h1{
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 7vw;
@@ -230,7 +200,19 @@ h1{
   text-fill-color: transparent;
   color: transparent;
 }
-
+.site .hero h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2vw;
+  line-height: 1;
+  color: #ffeba7;
+  text-align: center;
+  -webkit-text-stroke: 1px #ffeba7;
+  text-stroke: 2px #ffeba7;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: transparent;
+}
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked){
   position: absolute;
@@ -687,6 +669,9 @@ color: black;
 
 
 
+.projectCardImg{
+  height: 60%;
+}
 
 .techs{
   display: flex;
@@ -696,6 +681,35 @@ color: black;
   justify-content: center;
 }
 
+
+.smallTech{
+  border-bottom: 2px solid rgb(0, 0, 0, 20%);
+  margin-bottom: 15px;
+}
+
+.smallTech img{
+  width: 70px;
+  height: 70px;
+ }
+ .smallTechLast img{
+  width: 70px;
+  height: 70px;
+ }
+
+ .smallTechUl{
+padding-left: 1.5rem;
+font-size: 14px;
+ }
+
+ .smallTechContent{
+   padding-left: 5px;
+ }
+
+
+
+
+
+
   .pwithcolor{
     background-color: slategray;
     padding: 5px;
@@ -703,9 +717,13 @@ color: black;
     margin-bottom: 5px;
 font-size: 0.8rem;
   }
-  
+
+
 .photo1proj{
-  width: 100%;
+  max-height: 60%;
+  height: auto;
+  max-width: 100%;
+  width: auto;
 }
 
 .secproj{
@@ -724,6 +742,33 @@ font-size: 0.8rem;
   font-size: 1rem;
 }
 
+.formStyle{
+  align-self: start;
+}
+
+.buttonContact{
+  margin-top: 20px;
+  background-color: rgba(95, 95, 95, 0.5);
+  color: white;
+  padding: 8px 20px;
+border-radius: 10px;
+}
+
+.buttonContact:hover{
+  background-color: rgba(165, 165, 165, 0.836);
+}
+
+.navStyle{
+  font-size: 1.5rem;
+  padding-right: 0.8vw;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navStyle2{
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.952);
+  font-weight: bold;
+}
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
   
@@ -747,7 +792,6 @@ font-size: 0.8rem;
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
       inset -5px -5px 15px rgba(255, 255, 255, 0.1),
       5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
     margin: 30px;
     transition: 0.5s;
   }
@@ -775,10 +819,10 @@ font-size: 0.8rem;
     align-items: center;
     overflow: hidden;
     transition: 0.5s;
-    border-radius: 15px;
   }
   
-  body section .projects .container .card .box:hover {
+  body section .projects .container .card .box .photo1proj:hover {
+    transition: 0.5s;
     transform: scaleY(1.075) scaleX(1.045);
   }
   
@@ -812,14 +856,19 @@ font-size: 0.8rem;
     transition: 0.5s;
   }
   
+  body section .projects .container .card .box .content .projectButtons .buttonProject{
+    border-radius: 10px;
+  }
+
   body section .projects .container .card .box .content .projectButtons a {
     position: relative;
     display: inline-block;
-    padding: 8px 10px;
     background: black;
     text-decoration: none;
     color: white;
     transition: 0.5s;
+    margin-bottom: 10px;
+    padding: 5px;
   }
   body section .projects .container .card .box .content .projectButtons a:hover {
     background: #fff;
