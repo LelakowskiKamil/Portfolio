@@ -132,7 +132,7 @@ height: auto;
 
 @media(min-width: 576px){
   .aboutmetext{
-    margin: 15px;
+    margin: 14px;
     text-align: justify;
     font-size: 1.75vw; 
   }
@@ -143,7 +143,7 @@ height: auto;
 
 @media(min-width: 991px){
   .aboutmetext{
-    margin: 15px;
+    margin: 14px;
     text-align: justify;
     font-size: 1.5vw; 
   }
@@ -681,7 +681,10 @@ color: black;
   justify-content: center;
 }
 
-
+.techs a{
+  color:#ececee;
+  font-weight: bold;
+}
 .smallTech{
   border-bottom: 2px solid rgb(0, 0, 0, 20%);
   margin-bottom: 15px;

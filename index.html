@@ -20,7 +20,6 @@
         <a class="nav-item nav-link navStyle" href="#about">About</a>
         <a class="nav-item nav-link navStyle" href="#technologies">Technologies</a>
         <a class="nav-item nav-link navStyle" href="#projects">Projects</a>
-        <a class="nav-item nav-link navStyle" href="#contact">Contact</a>
       </div>
     <div class="d-block d-md-none">
       <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
@@ -30,7 +29,6 @@
           <li><a onclick="closeMenu()" href="#about">About</a></li>
           <li><a onclick="closeMenu()" href="#technologies">Technologies</a></li>
           <li><a onclick="closeMenu()" href="#projects">Projects</a></li>
-          <li><a onclick="closeMenu()" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -38,7 +36,7 @@
 
     <div class="hero">
       <h1>Kamil Lelakowski</h1>
-      <h6 class="d-none d-md-block">Backend Developer</h1>
+      <h6 class="d-none d-md-block">Java/Scala Developer</h1>
     </div>
   </div>
 
@@ -51,20 +49,12 @@
         <div class="d-flex flex-row align-content-center justify-content-center d-lg-none">
           <img class="img me w-50" src="ja22.jpg">
         </div>
-        <p class="aboutmetext px-3">My name is Kamil Lelakowski. I am in part-time masters studies in Computer Science
-          at
-          the
-          Warsaw
-          University of Technology. Earlier, my engineering thesis, as well as the currently selected
-          specialization at the 2nd degree studies, directed me to the path of a IT
-          systems architect. </p>
-        <p class="aboutmetext px-3"> I have over one year of commercial experience working at Scala. I also familiar
-          with Java and the Spring framework. In my spare time I practice
-          street-workout and acrobatics.</p>
-
+        <p class="aboutmetext px-3">Hello, my name is Kamil Lelakowski and I am a passionate individual who always strives to work with accuracy and commitment on the assigned tasks, constantly developing towards Software Engineering. I also develop my own application on github, on which I learn to design software applications.</p>
+        <p class="aboutmetext px-3">Over past year I've worked in company on development Business Support System. I have experience in software engineering and building microservices.</p>
+        <p class="aboutmetext px-3">I am also a student of extramural master's studies in Computer Science at the Warsaw University of Technology.</p>
         <div class="items2 mb-2 px-3">
           <img class="mx-2" src="mail.png" alt="mail"> <a class="linkstyle"
-            href="mailto: kamilel1997@gmail.com">kamilel1997@gmail.com</a>
+            href="mailto: kamil.lelakowski@outlook.com">kamil.lelakowski@outlook.com</a>
         </div>
         <div class="items2 mb-2 px-3">
           <img class="mx-2" src="git.png" alt="git"> <a class="linkstyle"
@@ -469,6 +459,24 @@
 
         <div class="card">
           <div class="box d-flex flex-column">
+            <img class="photo1proj" src="https://it-consulting.pl/wp-content/uploads/2014/05/ERP-tag-cloud-Infograph.jpg">
+            <div class="content">
+              <h3>ERP-Metalbud demo application</h3>
+              <div class="techs">
+                <a class="pwithcolor">Java</a><a class="pwithcolor">Spring</a><a class="pwithcolor">Hibernate</a><a
+                  class="pwithcolor">Docker</a><a class="pwithcolor">OracleDB</a><a class="pwithcolor">Eureka</a><a
+                  class="pwithcolor">Hystrix</a>
+              </div>
+              <p>Demo of ERP system based on microservices, which includes such modules as Product Information Management, Product Inventory, Price Engine, Order Management. Only backend development. Communication using REST API.</p>
+              <div class="projectButtons">
+                <a class="buttonProject" href="http://github.com/LelakowskiKamil/Car-classifieds-application">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box d-flex flex-column">
             <img class="photo1proj" src="https://i.ibb.co/6yqq4V5/proj1.png">
             <div class="content">
               <h3>Car bulletin board </h3>
@@ -479,65 +487,16 @@
               <p>Simple application where you can create, edit, remove announcements with user login interface</p>
               <div class="projectButtons">
                 <a class="buttonProject" href="http://github.com/LelakowskiKamil/Car-classifieds-application">Github</a>
-                <a class="buttonProject" href="#">Demo</a>
               </div>
 
             </div>
           </div>
         </div>
-
-        <div class="card">
-          <div class="box d-flex flex-column">
-            <img class="photo1proj" src="https://i.ibb.co/fntZ39L/wms.png">
-            <div class="content">
-              <h3>WMS demo application</h3>
-              <div class="techs">
-                <a class="pwithcolor">Java</a><a class="pwithcolor">Spring</a><a class="pwithcolor">Hibernate</a><a
-                  class="pwithcolor">Docker</a><a class="pwithcolor">OracleDB</a><a class="pwithcolor">Eureka</a><a
-                  class="pwithcolor">Hystrix</a>
-              </div>
-              <p>Demo of Warehouse management system based on my engineering thesis</p>
-              <div class="projectButtons">
-                <a class="buttonProject" href="http://github.com/LelakowskiKamil/Car-classifieds-application">Github</a>
-                <a class="buttonProject" href="#">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
 
   </section>
-  <section class="section contact" id="contact">
-    <h2>Contact</h2>
-    <div class="contact">
-        <div class="row">
-          <div class="col-md-2 col-lg-3"></div>
-          <div class="col-md-8 col-lg-6">
-              <form class="formStyle d-flex flex-column" action="#" method="POST">
-                <div>
-                  <div class="d-flex flex-column">
-                    <label for="email">Email</label>
-                    <input name="email" id="email">
-                    <label for="topic">Topic</label>
-                    <input name="topic" id="topic">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="10"></textarea>
-                  </div>
-                </div>
-                <div>
-                  <button class="buttonContact">Send</button>
-                </div>
-              </form>
-          </div>
-          <div class="col-md-2 col-lg-3"></div>
-        </div>
 
-    </div>
-
-    </div>
-  </section>
   <footer>
     <p>No Copyright 2021</p>
   </footer>
